@@ -1,3 +1,5 @@
+/* Entire CSS file has been rearranged to follow
+logical structure of index.html */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +10,11 @@ body {
     background-color: #d9dcd6;
 }
 
+/* CSS has been updated according to HTML semantic elements.
+Redundant classes/class selectors were replaced by semantic element selectors
+ */
+
+ /* .header class selector replaced by header element selector */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,6 +27,7 @@ header h1 {
     font-size: 48px;
 }
 
+/* .seo class selector replaced by span element selector */
 span {
     color: #d9dcd6;
 }
@@ -45,7 +53,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* Unecessary .hero selector replaced by figure element selector */
 figure {
     height: 800px;
     width: 100%;
@@ -55,6 +63,7 @@ figure {
     background-position: center;
 }
 
+/* .content selector replaced by main element selector */
 main {
     width: 75%;
     display: inline-block;
@@ -63,6 +72,26 @@ main {
 
 p {
     font-size: 16px;
+}
+
+/* Main element content styiling has been consolidated under 
+.content class selector */
+.content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content img {
+    max-height: 200px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .float-left {
@@ -75,9 +104,9 @@ p {
     margin-left: 25px;
 }
 
+/* .benefits class selector replaced by aside element selector */
 
-
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -88,111 +117,24 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Redundant benefit classes all consolidated under .benefits class selector */
+.benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-
-
+/*  */
 footer {
     padding: 30px;
     clear: both;
