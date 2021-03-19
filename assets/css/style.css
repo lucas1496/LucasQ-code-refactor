@@ -134,7 +134,7 @@ aside {
     max-width: 150px;
 }
 
-/*  */
+/* .footer class selector replaced by footer element selector */
 footer {
     padding: 30px;
     clear: both;
@@ -142,6 +142,7 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+/* h2 element replaced by h4 */
+footer h4 {
     font-size: 20px;
 }
